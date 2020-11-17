@@ -7,24 +7,20 @@
   <body>
 
     <header class="page-header">
-      <a href="/" class="logo-image">
-        <img class="logo-image__mobile" src="https://via.placeholder.com/150x150" alt="Нейзвестное животное - супергерой, в маске.">
+      <a class="logo-image">
+        <img class="logo-image__mobile" src="https://via.placeholder.com/150x150" alt="Неизвестное животное - супергерой, в маске.">
+        <img  class="logo-heading__image" src="https://via.placeholder.com/150x150" alt="Название интернет магазина, Cat Energy">
       </a>
 
-      <article class="logo-heading">
-        <h2 class="visually-hidden">Кэт энерджи</h2>
-        <img  class="logo-heading__image" src="https://via.placeholder.com/150x150" alt="Название интернет магазина, Cat Energy">
-      </article>
-
       <nav class="main-navigation">
+        <div class="main-navigation__container">
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-navigation-container">
           <ul class="main-navigation__list">
-            <li class="main-navigation__item main-navigation__item--index"><a href="#">Главная</a></li>
-            <li class="main-navigation__item main-navigation__item--catalog"><a href="catalog.html">Каталог продукций</a></li>
-            <li class="main-navigation__item main-navigation__item--form"><a href="form.html">Подбор программы</a></li>
+            <li class="main-navigation__item"><a href="#">Главная</a></li>
+            <li class="main-navigation__item"><a href="catalog.html">Каталог продукций</a></li>
+            <li class="main-navigation__item"><a href="form.html">Подбор программы</a></li>
           </ul>
         </div>
       </nav>
@@ -35,20 +31,20 @@
       <h1 class="title page-title">Подбор программы</h1>
 
       <section class="selection">
-        <div class="selection-container">
-          <form class="selection-form form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form-animal-info">
+        <div class="selection__container">
+          <form class="selection__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="selection__form-animal">
               <h2 class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
 
               <div class="information">
                 <label class="information__label">ИМЯ:*
-                  <input type="text" class="information__input" placeholder="Барсик" required>
+                  <input class="information__input" type="text" placeholder="Барсик" required>
                 </label>
                 <label class="information__label">Вес (кг):*
-                  <input type="number" class="information__input" placeholder="7" required>
+                  <input class="information__input" type="number" placeholder="7" required>
                 </label>
                 <label class="information__label">Возраст (лет):
-                  <input type="number" class="information__input" placeholder="7">
+                  <input class="information__input" type="number" placeholder="7">
                 </label>
               </div>
 
@@ -77,10 +73,10 @@
             <fieldset class="contacts">
               <legend class="title legend-title">Контактные данные (владельца кота)</legend>
                 <label class="contacts__label">E-mail:*
-                  <input class="contacts__input contacts__input--email" type="email" placeholder="kuklachev@gmail.com" required>
+                  <input class="contacts__input" type="email" placeholder="kuklachev@gmail.com" required>
                 </label>
                 <label class="contacts__label">Телефон:*
-                  <input class="contacts__input contacts__input--tel" type="email" placeholder="8 (960) 900-60-90" required>
+                  <input class="contacts__input" type="email" placeholder="8 (960) 900-60-90" required>
                 </label>
             </fieldset>
 
@@ -88,6 +84,7 @@
               <legend class="title legend-title">Комментарий</legend>
               <textarea class="comments__textarea" name="comment" cols="70" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
+            
             <fieldset class="options">
               <legend class="title legend-title">Дополнительно</legend>
               <div class="options__item">
@@ -126,42 +123,45 @@
 
     <footer class="page-footer">
       <section class="location">
+        <div class="location__container">
         <h2 class="visually-hidden">Локация Кэт энерджи</h2>
-        <div class="location-container">
           <div class="location-box">
             <p class="location-box__invite">приглашаем к сотрудничеству дилеров!</p>
             <p class="location-box__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
+
+
           <div class="location-map">
-            <img src="https://via.placeholder.com/150x150" alt="карта интернет магазина Cat energy" class="location-map__image">
+            <!-- blank div for iframe - map *****************************************-->
           </div>
+
+
         </div>
       </section>
       <section class="main-footer">
-        <div class="main-footer-container">
+        <div class="main-footer__container">
           <h2 class="visually-hidden">Footer</h2>
-          <article class="logo-heading">
-            <h2 class="visually-hidden">Кэт энерджи</h2>
             <img  class="logo-heading__image" src="https://via.placeholder.com/150x150" alt="Название интернет магазина, Cat Energy">
-          </article>
           <section class="social-networks">
             <h2 class="visually-hidden">Мы в социальных сетях.</h2>
             <ul class="social-networks__list">
               <li class="social-networks__item">
-                <a href="#" class="social-networks__link social-networks__link--vk" aria-label="Вконтакте">vk</a>
+                <a class="social-networks__link" href="#" aria-label="Вконтакте"></a>
               </li>
               <li class="social-networks__item">
-                <a href="#" class="social-networks__link social-networks__link--insta" aria-label="Инстаграм">insta</a>
+                <a class="social-networks__link" href="#" aria-label="Инстаграм"></a>
               </li>
               <li class="social-networks__item">
-                <a href="#" class="social-networks__link social-networks__link--fb" aria-label="Фейсбук">fb</a>
+                <a class="social-networks__link" href="#" aria-label="Фейсбук"></a>
               </li>
             </ul>
           </section>
           <section class="copyright">
             <h2 class="visually-hidden">Копирайт</h2>
             <p class="copyright__text">HTML Academy</p>
-            <div class="copyright__logo"><span class="visually-hidden">Логотип HTML Академии</span></div>
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="visually-hidden">Логотип HTML Академии</span>
+            </a>
           </section>
         </div>
       </section>
