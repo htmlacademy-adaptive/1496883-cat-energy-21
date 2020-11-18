@@ -31,20 +31,20 @@
       <h1 class="title page-title">Подбор программы</h1>
 
       <section class="selection">
-        <div class="selection-container">
-          <form class="selection-form form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form-animal-info">
+        <div class="selection__container">
+          <form class="selection__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="selection__form-animal">
               <h2 class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
 
               <div class="information">
                 <label class="information__label">ИМЯ:*
-                  <input type="text" class="information__input" placeholder="Барсик" required>
+                  <input class="information__input" type="text" placeholder="Барсик" required>
                 </label>
                 <label class="information__label">Вес (кг):*
-                  <input type="number" class="information__input" placeholder="7" required>
+                  <input class="information__input"  type="number" placeholder="7" required>
                 </label>
                 <label class="information__label">Возраст (лет):
-                  <input type="number" class="information__input" placeholder="7">
+                  <input class="information__input"  type="number" placeholder="7">
                 </label>
               </div>
 
@@ -73,10 +73,10 @@
             <fieldset class="contacts">
               <legend class="title legend-title">Контактные данные (владельца кота)</legend>
                 <label class="contacts__label">E-mail:*
-                  <input class="contacts__input contacts__input--email" type="email" placeholder="kuklachev@gmail.com" required>
+                  <input class="contacts__input" type="email" placeholder="kuklachev@gmail.com" required>
                 </label>
                 <label class="contacts__label">Телефон:*
-                  <input class="contacts__input contacts__input--tel" type="email" placeholder="8 (960) 900-60-90" required>
+                  <input class="contacts__input" type="tel" placeholder="8 (960) 900-60-90" required>
                 </label>
             </fieldset>
 
@@ -84,6 +84,7 @@
               <legend class="title legend-title">Комментарий</legend>
               <textarea class="comments__textarea" name="comment" cols="70" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
+            
             <fieldset class="options">
               <legend class="title legend-title">Дополнительно</legend>
               <div class="options__item">
