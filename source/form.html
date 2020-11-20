@@ -31,84 +31,84 @@
       <h1 class="title page-main__title">Подбор программы</h1>
 
       <form class="selection" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="selection__fieldset fieldset-info">
-          <h2 class="fieldset-info__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+        <fieldset class="selection__fieldset">
+          <h2 class="selection__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
 
-            <label class="fieldset-info__label">ИМЯ:*
-              <input class="fieldset-info__input" type="text" name="nickname" placeholder="Барсик" required>
+            <label class="selection__info-label">ИМЯ:*
+              <input class="selection__info-input" type="text" name="nickname" placeholder="Барсик" required>
             </label>
-            <label class="fieldset-info__label">Вес (кг):*
-              <input class="fieldset-info__input" type="number" name="weight"  placeholder="7" required>
+            <label class="selection__info-label">Вес (кг):*
+              <input class="selection__info-input" type="number" name="weight"  placeholder="7" required>
             </label>
-            <label class="fieldset-info__label">Возраст (лет):
-              <input class="fieldset-info__input" type="number" name="age" placeholder="7">
+            <label class="selection__info-label">Возраст (лет):
+              <input class="selection__info-input" type="number" name="age" placeholder="7">
             </label>
         </fieldset>
-        <fieldset class="selection__fieldset fieldset-radio">
-            <div class="fieldset-radio__item">
-              <label class="fieldset-radio__label">
-                <input class="fieldset-radio__button" type="radio" name="pick" value="weight-loss" checked>
+        <fieldset class="selection__fieldset">
+            <div class="selection__radio-item">
+              <label class="selection__radio-label">
+                <input class="selection__radio-button" type="radio" name="pick" value="weight-loss" checked>
                 <span>Похудение</span>
               </label>
             </div>
-            <div class="fieldset-radio__item">
-              <label class="fieldset-radio__label">
-                <input class="fieldset-radio__button" type="radio" name="pick" value="muscle-gain">
+            <div class="selection__radio-item">
+              <label class="selection__radio-label">
+                <input class="selection__radio-button" type="radio" name="pick" value="muscle-gain">
                 <span>Набор массы</span>
               </label>
             </div>
-            <div class="fieldset-radio__item">
-              <label class="fieldset-radio__label">
-                <input class="fieldset-radio__button" type="radio" name="pick" value="need-help">
+            <div class="selection__radio-item">
+              <label class="selection__radio-label">
+                <input class="selection__radio-button" type="radio" name="pick" value="need-help">
                 <span>Не знаю (Нужен ваш совет)</span>
               </label>
             </div>
         </fieldset>
 
-        <fieldset class="selection__fieldset fieldset-contacts">
+        <fieldset class="selection__fieldset">
           <legend class="title selection__legend">Контактные данные (владельца кота)</legend>
-            <label class="fieldset-contacts__label">E-mail:*
-              <input class="fieldset-contacts__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <label class="selection__contacts-label">E-mail:*
+              <input class="selection__contacts-input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             </label>
-            <label class="fieldset-contacts__label">Телефон:*
-              <input class="fieldset-contacts__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+            <label class="selection__contacts-label">Телефон:*
+              <input class="selection__contacts-input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
             </label>
         </fieldset>
 
         <fieldset class="selection__fieldset">
           <legend class="title selection__legend">Комментарий</legend>
-          <textarea class="selection__fieldset-textarea" name="comment" cols="70" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="selection__textarea" name="comment" cols="70" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset class="selection__fieldset fieldset-options">
+        <fieldset class="selection__fieldset">
           <legend class="title selection__legend">Дополнительно</legend>
-          <div class="fieldset-options__item">
-            <label class="fieldset-options__label">
-              <input class="fieldset-options__check" type="checkbox" name="sweetener">
+          <div class="selection__options-item">
+            <label class="selection__options-label">
+              <input class="selection__options-check" type="checkbox" name="sweetener">
               <span>Сахарозаменитель</span>
             </label>
           </div>
-          <div class="fieldset-options__item">
-            <label class="fieldset-options__label">
-              <input class="fieldset-options__check" type="checkbox" name="water">
+          <div class="selection__options-item">
+            <label class="selection__options-label">
+              <input class="selection__options-check" type="checkbox" name="water">
               <span>Питьевая вода</span>
             </label>
           </div>
-          <div class="fieldset-options__item">
-            <label class="fieldset-options__label">
-              <input class="fieldset-options__check" type="checkbox" name="milk">
+          <div class="selection__options-item">
+            <label class="selection__options-label">
+              <input class="selection__options-check" type="checkbox" name="milk">
               <span>Молоко</span>
             </label>
           </div>
-          <div class="fieldset-options__item">
-            <label class="fieldset-options__label">
-              <input class="fieldset-options__check" type="checkbox" name="vitamins">
+          <div class="selection__options-item">
+            <label class="selection__options-label">
+              <input class="selection__options-check" type="checkbox" name="vitamins">
               <span>Витамины</span>
             </label>
           </div>
         </fieldset>
-        <button class="selection__fieldset-button" type="submit">отправить заявку</button>
-        <p class="selection__fieldset-notice">* — Обязательные поля</p>
+        <button class="selection__button" type="submit">отправить заявку</button>
+        <p class="selection__notice">* — Обязательные поля</p>
       </form>
 
     </main>
